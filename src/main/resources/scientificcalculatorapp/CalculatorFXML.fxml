@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="576.0" prefWidth="1000.0" style="-fx-background-color: #303030;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="scientificcalculatorapp.ControllerFXML">
+    <children>
+      <HBox prefHeight="100.0" prefWidth="200.0" spacing="16.0" AnchorPane.bottomAnchor="16.0" AnchorPane.leftAnchor="16.0" AnchorPane.rightAnchor="16.0" AnchorPane.topAnchor="16.0">
+         <children>
+            <AnchorPane prefHeight="602.0" prefWidth="270.0">
+               <children>
+                  <VBox prefHeight="544.0" prefWidth="270.0" style="-fx-background-radius: 20;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="17.0" prefWidth="270.0" style="-fx-background-radius: 20; -fx-border-radius: 20;" text="Stack View" textFill="WHITE">
+                           <font>
+                              <Font name="Arial Bold" size="15.0" />
+                           </font>
+                        </Label>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="526.0" prefWidth="272.0">
+                           <children>
+                              <ListView fx:id="stackView" prefHeight="526.0" prefWidth="270.0" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="544.0" prefWidth="682.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <TextField fx:id="displayField" alignment="BOTTOM_RIGHT" focusTraversable="false" layoutX="15.0" layoutY="17.0" onKeyPressed="#enterTextField" prefHeight="91.0" prefWidth="657.0" promptText="Insert using the following buttons or the keyboard" style="-fx-background-radius: 8;">
+                     <font>
+                        <Font name="Arial" size="20.0" />
+                     </font>
+                  </TextField>
+                  <Button layoutX="313.0" layoutY="435.0" mnemonicParsing="false" onAction="#twoClick" prefHeight="45.0" prefWidth="116.0" style="-fx-background-radius: 15; -fx-background-color: #C4BFDB;" text="2">
+                     <font>
+                        <Font name="Arial Bold" size="15.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="313.0" layoutY="383.0" mnemonicParsing="false" onAction="#fiveClick" prefHeight="45.0" prefWidth="116.0" style="-fx-background-radius: 15; -fx-background-color: #C4BFDB;" text="5">
+                     <font>
+                        <Font name="Arial Bold" size="15.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="557.0" layoutY="384.0" mnemonicParsing="false" onAction="#sumClick" prefHeight="45.0" prefWidth="116.0" style="-fx-background-radius: 15; -fx-background-color: #EF9A65;" text="+">
+                     <font>
+                        <Font name="Arial Bold" size="15.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="557.0" layoutY="332.0" mnemonicParsing="false" onAction="#subClick" prefHeight="45.0" prefWidth="116.0" style="-fx-background-radius: 15; -fx-background-color: #EF9A65;" text="-">
+                     <font>
+                        <Font name="Arial Bold" size="15.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="557.0" layoutY="280.0" mnemonicParsing="false" onAction="#prodClick" prefHeight="45.0" prefWidth="116.0" style="-fx-background-radius: 15; -fx-background-color: #EF9A65;" text="*">
+                     <font>
+                        <Font name="Arial Bold" size="15.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="557.0" layoutY="228.0" mnemonicParsing="false" onAction="#divClick" prefHeight="45.0" prefWidth="116.0" style="-fx-background-radius: 15; -fx-background-color: #EF9A65;" text="/">
+                     <font>
+                        <Font name="Arial Bold" size="15.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="435.0" layoutY="123.0" minHeight="36.0" minWidth="70.0" mnemonicParsing="false" onAction="#deleteClick" prefHeight="97.0" prefWidth="116.0" style="-fx-background-radius: 15; -fx-background-color: #EB8080;">
+                     <font>
+                        <Font name="Arial Bold" size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="sendButton" layoutX="557.0" layoutY="436.0" minHeight="45.0" minWidth="116.0" mnemonicParsing="false" onAction="#enterClick" prefHeight="97.0" prefWidth="116.0" style="-fx-background-radius: 15; -fx-background-color: #F3F1E9;">
+                     <font>
+                        <Font name="Arial Bold" size="15.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="191.0" layoutY="487.0" mnemonicParsing="false" onAction="#jClick" prefHeight="45.0" prefWidth="116.0" style="-fx-background-radius: 15; -fx-background-color: #C4BFDB;" text="j">
+                     <font>
+                        <Font name="Arial Bold" size="15.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="313.0" layoutY="487.0" mnemonicParsing="false" onAction="#zeroClick" prefHeight="45.0" prefWidth="116.0" style="-fx-background-radius: 15; -fx-background-color: #C4BFDB;" text="0">
+                     <font>
+                        <Font name="Arial Bold" size="15.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="435.0" layoutY="487.0" mnemonicParsing="false" onAction="#pointClick" prefHeight="45.0" prefWidth="116.0" style="-fx-background-radius: 15; -fx-background-color: #C4BFDB;" text=".">
+                     <font>
+                        <Font name="Arial Bold" size="15.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="191.0" layoutY="435.0" mnemonicParsing="false" onAction="#oneClick" prefHeight="45.0" prefWidth="116.0" style="-fx-background-radius: 15; -fx-background-color: #C4BFDB;" text="1">
+                     <font>
+                        <Font name="Arial Bold" size="15.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="435.0" layoutY="435.0" mnemonicParsing="false" onAction="#threeClick" prefHeight="45.0" prefWidth="116.0" style="-fx-background-radius: 15; -fx-background-color: #C4BFDB;" text="3">
+                     <font>
+                        <Font name="Arial Bold" size="15.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="191.0" layoutY="383.0" mnemonicParsing="false" onAction="#fourClick" prefHeight="45.0" prefWidth="116.0" style="-fx-background-radius: 15; -fx-background-color: #C4BFDB;" text="4">
+                     <font>
+                        <Font name="Arial Bold" size="15.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="435.0" layoutY="383.0" mnemonicParsing="false" onAction="#sixClick" prefHeight="45.0" prefWidth="116.0" style="-fx-background-radius: 15; -fx-background-color: #C4BFDB;" text="6">
+                     <font>
+                        <Font name="Arial Bold" size="15.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="191.0" layoutY="331.0" mnemonicParsing="false" onAction="#sevenClick" prefHeight="45.0" prefWidth="116.0" style="-fx-background-radius: 15; -fx-background-color: #C4BFDB;" text="7">
+                     <font>
+                        <Font name="Arial Bold" size="15.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="313.0" layoutY="331.0" mnemonicParsing="false" onAction="#eightClick" prefHeight="45.0" prefWidth="116.0" style="-fx-background-radius: 15; -fx-background-color: #C4BFDB;" text="8">
+                     <font>
+                        <Font name="Arial Bold" size="15.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="435.0" layoutY="331.0" mnemonicParsing="false" onAction="#nineClick" prefHeight="45.0" prefWidth="116.0" style="-fx-background-radius: 15; -fx-background-color: #C4BFDB;" text="9">
+                     <font>
+                        <Font name="Arial Bold" size="15.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="557.0" layoutY="123.0" mnemonicParsing="false" onAction="#sqrtClick" prefHeight="45.0" prefWidth="116.0" style="-fx-background-radius: 15; -fx-background-color: #EF9A65;" text="sqrt">
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="557.0" layoutY="176.0" mnemonicParsing="false" onAction="#invClick" prefHeight="45.0" prefWidth="116.0" style="-fx-background-radius: 15; -fx-background-color: #EF9A65;" text="+/-">
+                     <font>
+                        <Font name="Arial Bold" size="15.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="190.0" layoutY="227.0" mnemonicParsing="false" onAction="#overClick" prefHeight="45.0" prefWidth="116.0" style="-fx-background-radius: 15; -fx-background-color: #B0B7F6;" text="OVER">
+                     <font>
+                        <Font name="Arial Bold" size="15.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="313.0" layoutY="227.0" mnemonicParsing="false" onAction="#swapClick" prefHeight="45.0" prefWidth="116.0" style="-fx-background-radius: 15; -fx-background-color: #B0B7F6;" text="SWAP">
+                     <font>
+                        <Font name="Arial Bold" size="15.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="191.0" layoutY="175.0" mnemonicParsing="false" onAction="#dupClick" prefHeight="45.0" prefWidth="116.0" style="-fx-background-radius: 15; -fx-background-color: #B0B7F6;" text="DUP">
+                     <font>
+                        <Font name="Arial Bold" size="15.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="313.0" layoutY="174.0" mnemonicParsing="false" onAction="#dropClick" prefHeight="45.0" prefWidth="116.0" style="-fx-background-radius: 15; -fx-background-color: #B0B7F6;" text="DROP">
+                     <font>
+                        <Font name="Arial Bold" size="15.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="190.0" layoutY="279.0" minHeight="36.0" minWidth="70.0" mnemonicParsing="false" onAction="#clearClick" prefHeight="45.0" prefWidth="239.0" style="-fx-background-radius: 15; -fx-background-color: #B0B7F6;" text="CLEAR">
+                     <font>
+                        <Font name="Arial Bold" size="15.0" />
+                     </font>
+                  </Button>
+                  <VBox layoutX="17.0" layoutY="123.0" prefHeight="59.0" prefWidth="167.0" style="-fx-background-color: #BFDBDA; -fx-background-radius: 9;">
+                     <children>
+                        <Text fill="#433737" strokeType="OUTSIDE" strokeWidth="0.0" text="      Variables" textAlignment="CENTER" wrappingWidth="134.330078125">
+                           <font>
+                              <Font name="Arial Black" size="18.0" />
+                           </font>
+                        </Text>
+                        <ComboBox fx:id="variablesList" prefHeight="40.0" prefWidth="167.0" style="-fx-font: &quot;15px Arial Bold&quot;; -fx-background-color: f9f9f9; -fx-background-radius: 9; -fx-border-color: black; -fx-border-radius: 9;" />
+                     </children>
+                  </VBox>
+                  <VBox layoutX="16.0" layoutY="331.0" prefHeight="202.0" prefWidth="169.0" style="-fx-background-color: #B995D5; -fx-background-radius: 9;">
+                     <children>
+                        <Text fill="#433737" strokeType="OUTSIDE" strokeWidth="0.0" text="Variables Operations:" textAlignment="RIGHT" wrappingWidth="141.76019287109375">
+                           <font>
+                              <Font name="Arial Black" size="11.0" />
+                           </font>
+                        </Text>
+                        <Button mnemonicParsing="false" onAction="#sumToVarClick" prefHeight="33.0" prefWidth="171.0" style="-fx-background-color: f4f4f4; -fx-background-radius: 9; -fx-border-radius: 9; -fx-border-color: black;" text="+var" textAlignment="CENTER">
+                           <font>
+                              <Font name="Arial Bold" size="15.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#subtractToVarClick" prefHeight="33.0" prefWidth="171.0" style="-fx-background-color: f4f4f4; -fx-background-radius: 9; -fx-border-color: black; -fx-border-radius: 9;" text="-var">
+                           <font>
+                              <Font name="Arial Bold" size="15.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="12.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#assignVarClick" prefHeight="33.0" prefWidth="171.0" style="-fx-background-color: f4f4f4; -fx-background-radius: 9; -fx-border-radius: 9; -fx-border-color: black;" text="&lt;var">
+                           <font>
+                              <Font name="Arial Bold" size="15.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="12.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#copyVarClick" prefHeight="33.0" prefWidth="171.0" style="-fx-background-color: f4f4f4; -fx-background-radius: 9; -fx-border-color: black; -fx-border-radius: 9;" text="&gt;var">
+                           <font>
+                              <Font name="Arial Bold" size="15.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="12.0" />
+                           </VBox.margin>
+                        </Button>
+                     </children>
+                  </VBox>
+                  <ImageView fitHeight="97.0" fitWidth="97.0" layoutX="566.0" layoutY="436.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@sendIco.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="59.0" fitWidth="63.0" layoutX="461.0" layoutY="144.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@cancIco.png" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="435.0" layoutY="227.0" minHeight="36.0" minWidth="70.0" mnemonicParsing="false" onAction="#cancClick" prefHeight="97.0" prefWidth="116.0" style="-fx-background-radius: 15; -fx-background-color: #EB8080;" text="Canc">
+                     <font>
+                        <Font name="Arial Bold" size="15.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="190.0" layoutY="123.0" minHeight="36.0" minWidth="70.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="239.0" style="-fx-background-radius: 15; -fx-background-color: #B0B7F6;" text="Stack Functions:">
+                     <font>
+                        <Font name="Arial Bold" size="15.0" />
+                     </font>
+                  </Button>
+               </children>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </AnchorPane>
+         </children>
+      </HBox>
+    </children>
+</AnchorPane>
