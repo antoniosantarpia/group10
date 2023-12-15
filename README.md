@@ -11,7 +11,6 @@ Partecipanti:
 Il progetto si è basato su un software in grado di gestire una calcoltrice scientifica
 adatta anche a fare calcoli ed operazioni con i numeri complessi.
 È stato implementato per la prima volta, da noi studenti, un'interfaccia grafica tramite l'utilizzo di JavaFX;
-a questo si aggiunge un lungo cammino per la rifinitura del nostro primo progetto.
 
 ///////////////////////////////////
 
