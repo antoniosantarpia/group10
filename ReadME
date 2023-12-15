@@ -12,11 +12,11 @@ adatta anche a fare calcoli ed operazioni con i numeri complessi.
 ///////////////////////////////////
 
 Classi adoperate nel progetto:
-Calculator : il traduttore;
+Calculator : traduttore dell’input, operando/operazione;
 ComplexNumber : rappresentazione di numeri complessi;
 ComplexOperations : richiamo ed esecuzione di operazioni;
 Variables : variabili necessarie per specifiche funzioni gestite;
-ControllerFXML : il gestore del codice connesso all'interfaccia grafica;
+ControllerFXML : intermediario tra la logica di controllo e la view;
 ScientificCalculatorApp : launcher di tutto l'ecosistema creato.
 ///////////////////////////////////
 
