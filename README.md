@@ -21,7 +21,7 @@ Classi adoperate nel progetto:
 * ComplexOperations : richiamo ed esecuzione di operazioni;
 * Variables : variabili necessarie per specifiche funzioni gestite;
 * CalculatorFXML : interfaccia grafica della nostra calcolatrice;
-* ControllerFXML : il gestore del codice conneso all'interfaccia grafica;
+* ControllerFXML : il gestore del codice connesso all'interfaccia grafica;
 * ScientificCalculatorApp : launcher di tutto l'ecosistema creato.
   
 ///////////////////////////////////
