@@ -18,7 +18,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 /**
  *
- * @author CWS
+ * @author Group_10
  */
 public class VariablesTest {
     private Deque <ComplexNumber> stack;
