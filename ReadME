@@ -7,7 +7,7 @@ Domenico Micari
 
 ///////////////////////////////////
 Il progetto si è basato su un software in grado di gestire una calcoltrice scientifica 
-adatta anche a fare calcoli ed operazioni con i numeri complessi. 
+adatta per effettuare operazioni con i numeri complessi. 
 È stato implementato per la prima volta, da noi studenti, un'interfaccia grafica tramite l'utilizzo di JavaFX;
 ///////////////////////////////////
 
