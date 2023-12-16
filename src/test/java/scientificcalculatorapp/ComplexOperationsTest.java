@@ -12,7 +12,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 /**
  *
- * @author antoniosantarpia
+ * @author Group_10
  */
 public class ComplexOperationsTest {
     private Deque<ComplexNumber> stack;
