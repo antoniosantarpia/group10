@@ -17,7 +17,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 /**
  *
- * @author candi
+ * @author Group_10
  */
 public class ComplexNumberTest {
     
