@@ -7,7 +7,6 @@ package scientificcalculatorapp;
 import exceptions.VarOutOfRangeException;
 import exceptions.WrongCommandsException;
 import java.util.Deque;
-import java.util.StringTokenizer;
 
 
 /**
